@@ -149,17 +149,18 @@ transition: 0.3s;
 .icon-img:hover{
 opacity: 0.6;
 }
-@media (400px <= width <= 600px){
+@media (300px <= width <= 600px){
  .news-1{
   display: flex;
   flex-direction: column-reverse;
-  min-width: 400px;
  }
  .news-2{
   display: flex;
   flex-direction: column;
-  min-width: 400px;
  }
+.news-info{
+  height: 70vh
+}
  .img-news-1,
  .img-news-2,
  .news-img-1,
