@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+        
+</head>
+<body>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top navbar-scroll">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/logo4.png"></a>
+          <a class="navbar-brand grad-col" href="#">Real Estate</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Case Studies</a>
+              </li>
+              <li class="nav-item dropdown border border-primary rounded">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Industries</a>
+                <ul class="dropdown-menu bg-secondary">
+                  <li><a class="dropdown-item text-white" href="#">Residential</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Commercial</a></li>
+                  <hr>
+                  <li><a class="dropdown-item text-white" href="#">Industrial</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Raw Land</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Special Use</a></li>
+                  <li><a class="dropdown-item text-white" href="#">More</a></li>
+                </ul>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+            </ul>
+            <form class="d-flex navform">
+              <input class="form-control me-2 search-nav" type="text" placeholder="Search"><br>
+              <button class="btn btn-primary me-2" type="button">Search</button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+              Login
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="modal" id="myModal" style="z-index: 999999;">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header bg-primary">
+              <h4 class="modal-title">Login</h4>
+              <button type="button" class="btn-close bg-light" data-bs-dismiss="modal"></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+              <form action="#">
+                <div class="mb-3 mt-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control border border-info" id="email" placeholder="Enter Your Email" name="Email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="mb-3">
+                  <label for="pwd" class="form-label">Password:</label>
+                  <input type="password" class="form-control border border-info" id="pwd" placeholder="Enter Your Password" name="pswd">
+                </div>
+                <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" id="mySwitch" name="Remember Me" value="yes" checked>
+                  <label for="mySwitch" class="form-check-label">Remember Me</label>
+                </div>
+                </form>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer d-flex  justify-content-between">
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <main>
+       <!-- Carousel -->
+   <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner container-fluid p-0 ">
+    <div class="carousel-item active">
+      <img src="images/Bosjes _001.jpg" class="d-block" style="width:100%; height: 100vh;">
+      <div class="carousel-caption" style="background-color: rgba(128, 128, 128, 0.384);">
+        <h3 class="display-3">Los Angeles</h3>
+        <p>Our Masterpiece In Los Angeles</p>
+       	<button class="btn btn-primary" type="button">Learn More</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/frontgate1-scaled.jpg" class="d-block" style="width:100%; height: 100vh;">
+      <div class="carousel-caption" style="background-color: rgba(128, 128, 128, 0.2);">
+        <h3 class="display-3">Georgia</h3>
+        <p>Our Masterpiece In Georgia!</p>
+        <button class="btn btn-primary" type="button">Learn More</button>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="images/Pic1-1-scaled.jpg" class="d-block" style="width:100%; height: 100vh;">
+      <div class="carousel-caption" style="background-color: rgba(128, 128, 128, 0.2);">
+        <h3 class="display-3">New York</h3>
+        <p>Our Masterpiece In New York</p>
+        <button class="btn btn-primary" type="button">Learn More</button>
+      </div>  
+    </div>
+    <div class="carousel-item">
+      <img src="images/2K_Photo-6.jpg" class="d-block" style="width:100%; height: 100vh;">
+      <div class="carousel-caption" style="background-color: rgba(128, 128, 128, 0.2);">
+        <h3 class="display-3">Dubai</h3>
+        <p>Our Masterpiece In Dubai</p>
+        <button class="btn btn-primary" type="button">Learn More</button>
+      </div>  
+    </div>
+  </div>  
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+  </div>
+        <div class="position-fixed top-50 start-100 pr-5 translate-middle display-3 d-flex flex-column justify-content-end" style="z-index: 9999;">
+          <a href="#"><i class="fa-brands fa-square-facebook mb-2 pr-5"></i></a>
+          <a href="#"><i class="fa-brands fa-square-whatsapp mb-2 pr-5"></i></a>
+          <a href="#"><i class="fa-brands fa-square-twitter mb-2 pr-5"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin mb-2 pr-5"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram mb-2 pr-5"></i></a>
+        </div>
+      </main>
+      <section>
+      <div class="mb-2 p-5 bg-dark text-white ">
+        <h1 class="grad-col">Equinix</h1>
+        <p>Get the best real estate deals first,
+          before they hit the mass market!
+        </p>
+        <button class="btn btn-primary" type="button">Learn More</button>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <div class="mb-2 p-5 bg-dark text-white text-center">
+        <h2 class="display-3">Equinix Popular Projects</h2>
+      </div>
+    </section>
+    <section>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button grad-col fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-size: 25px;">
+              Springwoods Village, Texas
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <p>Also known as City Place, the Springwoods Village is a real estate project situated in a town called Spring, just north of Houston. Springwoods Village was built to create a highly-connected and solid community that also did its part for the environment.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed grad-col fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="font-size: 25px;">
+              Brickell City Center, Miami
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Brickell City Center is a mixed-use development located in the Brickell financial district in Miami. Expected to redefine urban living and bring innovation, modernization, and sophistication to the area, Brickell City Center is the single largest project in progress in downtown Miami. </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed grad-col fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="font-size: 25px;">
+              CityCentre, Las Vegas
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <p>CityCentre is an urban complex in the Las Vegas Strip in Nevada. The plans for this project started in 2004, and Ehrenkrantz, Eckstut, and Kuhn Architects created the master plan in 2006.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <div class="p-2 bg-success text-white text-center">
+        <h2 class="display-4">Contact For Purchasing</h2>
+      </div>
+      <div class="container-fluid bg-dark text-white pt-4 pb-4">
+        <h3 class="mr-2" style="display: inline-block;">Type your message</h3>
+        <a class="text-decoration-none fs-4" href="#">Press Here</a>
+        <button onclick="aler()" type="submit" class="btn btn-primary btn-alr btn-lg mt-2 tip-hov" style="display: block;" >Send</button>
+          <div class="mb-3 mt-3">
+            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+          </div>
+        </form>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <div class="p-2 bg-success text-white text-center">
+        <h2 class="display-4">Contact For Rent</h2>
+      </div>
+      <div class="container-fluid bg-dark text-white pt-4 pb-4">
+        <h3 class="mr-2" style="display: inline-block;">Type your message</h3>
+        <a class="text-decoration-none fs-4" href="#">Press Here</a>
+        <button onclick="aler()" type="submit" class="btn btn-primary btn-lg btn-alr mt-2 tip-hov" style="display: block;" >Send</button>
+          <div class="mb-3 mt-3">
+            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+          </div>
+        </form>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <div class="p-2 bg-success text-white text-center">
+        <h2 class="display-4">Contact For Investing</h2>
+      </div>
+      <div class="container-fluid bg-dark text-white pt-4 pb-4">
+        <h3 class="mr-2" style="display: inline-block;">Type your message</h3>
+        <a class="text-decoration-none fs-4" href="#">Press Here</a>
+        <button onclick="aler()" type="submit" class="btn btn-primary btn-lg btn-alr mt-2 tip-hov" style="display: block;" >Send</button>
+          <div class="mb-3 mt-3">
+            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+          </div>
+        </form>
+      </div>
+    </section>
+    <hr>
+    <section>
+    <div class="container-fluid fixed-img fixed-img1"></div>
+    </section>
+    <section>
+      <div class="mb-2 p-3 bg-dark text-white text-center">
+        <h2 class="display-5 fw-bold grad-col">Our Most Popular Projects</h2>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-around cards-container proj-cards">
+        <div class="card p-2 col-12 mb-3 mt-5 bg-dark text-white col-md-4 col-lg-4" style="max-width: 465px;">
+          <img class="card-img-top" src="images/facade-modern-building-with-geometric-windows-curved-walls.jpg">
+          <div class="card-body">
+            <h4 class="card-title" style="display: inline-block;">Modern Geometric</h4>
+            <a href="#" class="btn btn-primary float-end">More Info</a>
+            <p class="card-text">Los Angeles</p>
+          </div>
+        </div>
+        <div class="card p-2 col-12 mb-3 mt-5 bg-dark text-white col-md-4 col-lg-4" style="max-width: 465px;">
+          <img class="card-img-top " src="images/square-front-modern-office-buildings.jpg">
+          <div class="card-body">
+            <h4 class="card-title" style="display: inline-block;">Modern Office</h4>
+            <a href="#" class="btn btn-primary float-end">More Info</a>
+            <p class="card-text">Shanghai</p>
+          </div>
+        </div>
+        <div class="card p-2 col-12 mb-3 mt-5 bg-dark text-white col-md-4 col-lg-4" style="max-width: 465px;">
+          <img class="card-img-top" src="images/front-view-modern-skyscrapers-office-buildings.jpg" >
+          <div class="card-body">
+            <h4 class="card-title" style="display: inline-block;">Skyscrapers</h4>
+            <a href="#" class="btn btn-primary float-end">More Info</a>
+            <p class="card-text">New York</p>
+          </div>
+        </div>
+        <div class="card p-2 col-12 mb-3 mt-5 bg-dark text-white col-md-4 col-lg-4" style="max-width: 465px;">
+          <img class="card-img-top" src="images/modern-glass-skyscrapers-blue-sky.jpg">
+          <div class="card-body">
+            <h4 class="card-title" style="display: inline-block;">Glass Bullet</h4>
+            <a href="#" class="btn btn-primary float-end">More Info</a>
+            <p class="card-text">Dubai</p>
+          </div>
+        </div>
+        <div class="card p-2 col-12 mb-3 mt-5 bg-dark text-white col-md-4 col-lg-4" style="max-width: 465px;">
+          <img class="card-img-top" src="images/analog-landscape-city-with-buildings.jpg">
+          <div class="card-body">
+            <h4 class="card-title" style="display: inline-block;">City Building</h4>
+            <a href="#" class="btn btn-primary float-end">More Info</a>
+            <p class="card-text">Verginia</p>
+          </div>
+        </div>
+        <div class="card p-2 col-12 mb-3 mt-5 bg-dark text-white col-md-4 col-lg-4" style="max-width: 465px;">
+          <img class="card-img-top" src="images/beautiful-exotic-white-building-blue-sky.jpg">
+          <div class="card-body">
+            <h4 class="card-title" style="display: inline-block;">Blue Sky Building</h4>
+            <a href="#" class="btn btn-primary float-end">More Info</a>
+            <p class="card-text">Georgia</p>
+          </div>
+        </div>
+        <div class="card p-2 col-12 mb-3 mt-5 bg-dark text-white col-md-4 col-lg-4" style="max-width: 465px;">
+          <img class="card-img-top" src="images/flatiron-building-new-york-city.jpg">
+          <div class="card-body">
+            <h4 class="card-title" style="display: inline-block;">Flatiron Building</h4>
+            <a href="#" class="btn btn-primary float-end">More Info</a>
+            <p class="card-text">New York</p>
+          </div>
+        </div>
+        <div class="card p-2 col-12 mb-3 mt-5 bg-dark text-white col-md-4 col-lg-4" style="max-width: 465px;">
+          <img class="card-img-top" src="images/modern-high-rise-business-building-touching-sky.jpg">
+          <div class="card-body">
+            <h4 class="card-title" style="display: inline-block;">High Rise</h4>
+            <a href="#" class="btn btn-primary float-end">More Info</a>
+            <p class="card-text">Greece</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section>
+      <div class="container-fluid fixed-img fixed-img2 mt-5 mb-5"></div>
+      </section>
+      <section>
+        <div class="mb-2 p-3 bg-dark text-white text-center">
+          <h2 class="display-5 fw-bold grad-col pt-2 pb-2">Our Team</h2>
+        </div>
+        <div class="container-fluid team-container mt-5 ">
+          <div class="row container-fluid d-flex justify-content-center mt-5 mx-auto">
+            <div class="card h-50 rounded-5 p-0 col-sm-4 col-lg-4 col-12 mx-2 mb-4" style="max-width: 465px;"  >
+              <img class="rounded-5" src="images/bus3.jpg" style="height: 500px;">
+              <div class="card-img-overlay bg-dark text-light bg-opacity-75 rounded-5 p-5" style="z-index: 999;" >
+                <h4 class="card-title">All Thanks And Appreciation</h4>
+                <p class="card-text"><i class="fa-regular fa-clock"></i> Oct 23, 2022</p>
+                <div class=" card-img-overlay d-flex flex-column justify-content-end p-5" style="z-index: 999;">
+                  <img class="rounded-circle border border-dark border-3 mb-1" src="images/bus3.jpg" style="width: 35%; height: 23%;">
+                  <h5 class="card-title">Mark J.</h5>
+                  <p class="card-text">CEO</p>
+                </div>
+              </div>
+            </div>
+            <div class="card h-50 rounded-5 p-0 col-sm-4 col-lg-4 col-12 mx-2 mb-4" style="max-width: 465px;" >
+              <img class="rounded-5" src="images/bus1.jpg" style="height: 500px;">
+              <div class="card-img-overlay bg-dark text-light bg-opacity-75 rounded-5 p-5" style="z-index: 999;">
+                <h4 class="card-title">All Thanks And Appreciation</h4>
+                <p class="card-text"><i class="fa-regular fa-clock"></i> Oct 23, 2022</p>
+                <div class=" card-img-overlay d-flex flex-column justify-content-end p-5" style="z-index: 999;">
+                  <img class="rounded-circle border border-dark border-3 mb-1" src="images/bus1.jpg" style="width: 35%; height: 23%;">
+                  <h5 class="card-title">Matheow P.</h5>
+                  <p class="card-text">Procurement Manager Engineer</p>
+                </div>
+              </div>
+            </div>
+            <div class="card h-50 rounded-5 p-0 col-sm-4 col-lg-4 col-12 mx-2 mb-4" style="max-width: 465px;" >
+              <img class="rounded-5" src="images/bus2.jpg" style="height: 500px;">
+              <div class="card-img-overlay bg-dark text-light bg-opacity-75 rounded-5 p-5" style="z-index: 999;">
+                <h4 class="card-title">All Thanks And Appreciation</h4>
+                <p class="card-text"><i class="fa-regular fa-clock"></i> Oct 23, 2022</p>
+                <div class=" card-img-overlay d-flex flex-column justify-content-end p-5" style="z-index: 999;">
+                  <img class="rounded-circle border border-dark border-3 mb-1" src="images/bus2.jpg" style="width: 35%; height: 23%;">
+                  <h5 class="card-title">James M.</h5>
+                  <p class="card-text">Real Estate Director</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-md pt-5 shadow-lg">
+          <div class="p-1 bg-light text-white text-center mt-5">
+            <h2 class="display-5 fw-bold grad-col">Latest News</h2>
+          </div>
+          <div class="bg-dark text-white rounded d-flex column news-1 overflow-hidden mb-5">
+            <div class="news-info pt-5 pb-5 pl-5 pr-5 col-12 col-md-8 " >
+            <h1>The Woolworth Tower</h1>
+            <p><i class="fa-regular fa-gem"></i> Luxury Selection</p>
+            <span class="line rounded bg-primary"></span>
+            <p class="mt-3">The Woolworth Building soars above City Hall Park at the gateway to TriBeCa. Unprecedented in size and sophistication when it was first completed in 1913, this graceful tower remains an elegant jewel in the skyline of downtown Manhattan.</p>
+              <div class="jumbotron-footer d-flex align-self-end mt-auto pt-5 ">
+                <button type="button" class="btn btn-secondary btn-sm  "><i class="fa-solid fa-tags"></i> Podcast</button>
+                <button type="button" class="btn btn-secondary btn-sm ml-1 "><i class="fa-solid fa-clock"></i> 32 mins</button>
+                <button type="button" class="btn btn-secondary btn-sm ml-1 text-info vid-btn-1"><i class="fa-solid fa-play"></i> Play Video</button>
+              </div>
+          </div>
+            <div class="news-img-1 d-flex pr-0 col-md-4 col-lg-4 col-12 " >
+              <img src="images/HERO-31-1000x640.jpg" class="img-fluid rounded img-news-1">
+            </div>
+          </div>
+          <div class="bg-dark text-white rounded d-flex column news-2 overflow-hidden mb-5">
+            <div class="news-img-2 d-flex pr-0 col-md-4 col-lg-4 col-12" >
+              <img src="images/FH-photo-3-scaled.jpg" class="img-fluid rounded img-news-2">
+            </div>
+            <div class="news-info pt-5 pb-5 pl-5 pr-5 col-12 col-md-8 " >
+            <h1>Forest Hill Private Residences</h1>
+            <p><i class="fa-regular fa-gem"></i> Luxury Selection</p>
+            <span class="line rounded bg-danger"></span>
+            <p class="mt-3">Introducing Forest Hill Private Residences, nine storeys of expansive private residences overlooking the tranquil hues of Forest Hill Road. Anchored by local conveniences, quaint shops and well-loved boutiques, this is the true heart of Forest Hill. Experience the incomparable feeling of coming home.</p>
+              <div class="jumbotron-footer d-flex align-self-end mt-auto pt-5 ">
+                <button type="button" class="btn btn-secondary btn-sm  "><i class="fa-solid fa-tags"></i> Podcast</button>
+                <button type="button" class="btn btn-secondary btn-sm ml-1 "><i class="fa-solid fa-clock"></i> 32 mins</button>
+                <button type="button" class="btn btn-secondary btn-sm ml-1 text-info vid-btn-2"><i class="fa-solid fa-play"></i> Play Video</button>
+              </div>
+          </div>
+          </div>
+          <div class="bg-dark text-white rounded d-flex column news-1 overflow-hidden mb-5">
+            <div class="news-info pt-5 pb-5 pl-5 pr-5 col-12 col-md-8 " >
+            <h1>Baccarat Residences</h1>
+            <p><i class="fa-regular fa-gem"></i> Luxury Selection</p>
+            <span class="line rounded bg-success"></span>
+            <p class="mt-3">Situated in Downtown Dubai, the crystalline tower creates a majestic presence that shines bright amongst the city’s celebrated skyline. Angular forms paint elegant gestures on a metropolitan canvas, creating a sophisticated mark of difference that carefully complements and contrasts its surroundings. </p>
+              <div class="jumbotron-footer d-flex align-self-end mt-auto pt-5 ">
+                <button type="button" class="btn btn-secondary btn-sm  "><i class="fa-solid fa-tags"></i> Podcast</button>
+                <button type="button" class="btn btn-secondary btn-sm ml-1 "><i class="fa-solid fa-clock"></i> 32 mins</button>
+                <button type="button" class="btn btn-secondary btn-sm ml-1 text-info vid-btn-3"><i class="fa-solid fa-play"></i> Play Video</button>
+              </div>
+          </div>
+            <div class="news-img-1 d-flex pr-0 col-md-4 col-lg-4 col-12" >
+              <img src="images/Baccarat-1.jpg" class="img-fluid rounded img-news-1">
+            </div>
+          </div>
+          <div class="bg-dark text-white rounded d-flex column news-2 overflow-hidden mb-5">
+            <div class="news-img-2 d-flex pr-0 col-md-4 col-lg-4 col-12" >
+              <img src="images/Jeddah-1-scaled.jpg" class="img-fluid rounded img-news-2">
+            </div>
+            <div class="news-info pt-5 pb-5 pl-5 pr-5 col-12 col-md-8 " >
+            <h1>Raffles Residences Jeddah</h1>
+            <p><i class="fa-regular fa-gem"></i> Luxury Selection</p>
+            <span class="line rounded bg-warning"></span>
+            <p class="mt-3">An Exquisite Place to Call Home. Stretched across 48 floors, we are reshaping Jeddah’s iconic skyline through Raffles Residences while providing residents with breathtaking views, captivating interiors and movable mashrabiya screens.</p>
+              <div class="jumbotron-footer d-flex align-self-end mt-auto pt-5 ">
+                <button type="button" class="btn btn-secondary btn-sm  "><i class="fa-solid fa-tags"></i> Podcast</button>
+                <button type="button" class="btn btn-secondary btn-sm ml-1 "><i class="fa-solid fa-clock"></i> 32 mins</button>
+                <button type="button" class="btn btn-secondary btn-sm ml-1 text-info vid-btn-4"><i class="fa-solid fa-play"></i> Play Video</button>
+              </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="p-1 bg-light text-white text-center mt-4 mb-2">
+          <h2 class="display-5 fw-bold grad-col">Join Us</h2>
+        </div>
+        <div class="container-sm row row-cols-1 row-cols-md-4 text-center mx-auto w-75">
+          <div class="col mb-3">
+            <div class="card h-100 bg-dark follow-cards ">
+              <div class="card-body">
+                <h5 class="card-title fs-2 text-info pb-2">Follow Us</h5>
+                <a href="#"><img src="images/twetter.jpg" alt="" class="rounded-4 icon-img"></a>
+                <p class="fs-4 pt-1"><a href="#" class="link-info text-decoration-none link-opacity-50-hover">Press Here</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card h-100 bg-dark follow-cards ">
+              <div class="card-body">
+                <h5 class="card-title fs-2 text-info pb-2">Follow Us</h5>
+                <a href="#"><img src="images/youtube.jpg" alt="" class="rounded-4 icon-img "></a>
+                <p class="fs-4 pt-1"><a href="#" class="link-info text-decoration-none link-opacity-50-hover">Press Here</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card h-100 bg-dark follow-cards ">
+              <div class="card-body">
+                <h5 class="card-title fs-2 text-info pb-2">Follow Us</h5>
+                <a href="#"><img src="images/in.jpg" alt="" class="rounded-4 icon-img"></a>
+                <p class="fs-4 pt-1"><a href="#" class="link-info text-decoration-none link-opacity-50-hover">Press Here</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card h-100 bg-dark follow-cards  ">
+              <div class="card-body">
+                <h5 class="card-title fs-2 text-info pb-2">Follow Us</h5>
+                <a href="#"><img src="images/insta.jpg" alt="" class="rounded-4 icon-img"></a>
+                <p class="fs-4 pt-1"><a href="#" class="link-info text-decoration-none link-opacity-50-hover">Press Here</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container-fluid bg-dark text-white footer-bs pb-4">
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <hr>
+              <img src="images/logo1.png" class="rounded-circle logo-footer">
+              <h4 class="d-inline-block ml-1 fs-3">Contact Us</h4>
+              <hr>
+              <ul class="contacts fs-5" style="list-style: none;">
+                <li>Tel 001-217-458</li>
+                <li>Address Egypt</li>
+                <li>Fax 328-458-112</li>
+              </ul>
+            </div>
+            <div class="col-md-4 text-center">
+              <hr>
+              <img src="images/logo1.png" class="rounded-circle logo-footer">
+              <h4 class="d-inline-block ml-1 fs-3">Explore More</h4>
+              <hr>
+              <ul class="contacts fs-5" style="list-style: none;">
+                <li><a href="#" class="text-decoration-none">Recent Articles</a></li>
+                <li><a href="#" class="text-decoration-none">Our Vision</a></li>
+                <li><a href="#" class="text-decoration-none">About Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 text-center">
+              <hr>
+              <img src="images/logo1.png" class="rounded-circle logo-footer">
+              <h4 class="d-inline-block ml-1 fs-3">Covered Areas</h4>
+              <hr>
+              <ul class="contacts fs-5" style="list-style: none;">
+                <li class="1h-lg">Los Angeles</li>
+                <li>California</li>
+                <li>Chicago</li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <p class="fs-3 grad-col text-center">ALL TEXT ©2023 EQUINIX. PLEASE DO NOT COPY ANY OF OUR ORIGINAL TEXT</p>
+          <hr>
+        </div>
+      </footer>
+      
+    <script src="js/script.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    </script>
+</body>
+</html>

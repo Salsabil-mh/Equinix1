@@ -1,0 +1,171 @@
+.dropdown-menu .dropdown-item:hover{
+  background-color: rgba(0, 0, 0,0.2);
+}
+.navbar-scrolled{
+  background-color: rgba(0, 0, 0,0.5) !important;
+}
+.dropdown-scrolled{
+  background-color: rgba(0, 0, 0,0.3) !important;
+}
+.navform-scrolled{
+  opacity: 0.5;
+}
+.grad-col{
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #6fdfee 0%, #5170e0 50%, #b82aca 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.fixed-img{
+  background-size:cover;
+  background-attachment: fixed;
+  min-height: 350px;
+}
+.fixed-img1{
+  background-image: url(../images/modern-exterior-urban-view.jpg);
+}
+.fixed-img2{
+  background-image: url(../images/oil-steam-factory-background-ecology.jpg);
+}
+.card-img-top{
+  height: 380px;
+}
+.tip-hov{
+  position: relative;
+}
+.tip-hov::before,
+.tip-hov:after{
+  content:"Click to send!";
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  font-size: 13px;
+  width: 70px;
+  background-color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 5px;
+  color: #5170e0;
+  display: none;
+}
+.tip-hov::after{
+  content: "Sent!";
+}
+.tip-hov:hover::before{
+  display: block;
+}
+.tip-hov:focus::after{
+  display: block;
+}
+.tip-hov:focus::before{
+  display: none;
+}
+.cards-container{
+  position: relative;
+}
+.proj-cards .card::after,
+.card::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition:1s;
+  background-color: black;
+}
+.proj-cards .card::after{
+  top: 0;
+  left: 0;
+}
+.proj-cards .card::before{
+  bottom: 0;
+  right: 0;
+}
+.proj-cards .card:hover::after,
+.proj-cards .card:hover::before{
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+.team-container .card:hover{
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.team-container .card:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top:0;
+  background-color: rgba(58, 97, 226, 0);
+  border-radius: inherit;
+}
+.team-container .card:hover::after{
+  height: 100%;
+  background-color: rgba(65, 110, 233, 0.4);
+}
+.vid-btn-1:hover{
+  background-color: #0d6efd !important;
+}
+.vid-btn-2:hover{
+  background-color: #dc3545 !important;
+}
+.vid-btn-3:hover{
+  background-color: #198754 !important;
+}
+.vid-btn-4:hover{
+  background-color: #ffc107 !important;
+}
+.follow-cards,
+.logo-footer,
+.news-1,
+.news-2{
+  box-shadow: -4px -2px 15px 5px gray;
+}
+@media (800px <= width){
+.img-news-1:hover,
+.img-news-2:hover{
+transform: scale(1.1);
+transition: 0.3s;
+}
+.news-img-1,
+.img-news-1{
+  clip-path: polygon(15% 0%, 102% 0%, 102% 101%, 25% 100%);
+}
+.img-news-2,
+.news-img-2{
+  clip-path: polygon(0% -1%, 90% -1%, 81% 101%, -6% 103%);
+}
+}
+.line{
+  transition: width 0.3s;
+  display: block;
+  width: 80px;
+  height: 5px;
+}
+.news-1:hover .line,
+.news-2:hover .line{
+  width: 150px;
+}
+.icon-img:hover{
+opacity: 0.6;
+}
+@media (400px <= width <= 600px){
+ .news-1{
+  display: flex;
+  flex-direction: column-reverse;
+  min-width: 400px;
+ }
+ .news-2{
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+ }
+ .img-news-1,
+ .img-news-2,
+ .news-img-1,
+ .news-img-2{
+  width: 100%;
+  height: 200px;
+  clip-path: none;
+ }
+}
